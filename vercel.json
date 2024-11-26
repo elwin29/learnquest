@@ -29,7 +29,6 @@
         "DB_HOST": "vladimir-ai-vladimir-ai.h.aivencloud.com",
         "DB_PORT": "27051",
         "DB_DATABASE": "defaultdb",
-        "DB_USERNAME": "avnadmin",
-        "DB_SSL_MODE": "REQUIRED"
+        "DB_USERNAME": "avnadmin"
     }
 }
