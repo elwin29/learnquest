@@ -8,6 +8,15 @@
         { "src": "/build/(.*)", "dest": "/public/build/" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
+    "builds": [
+        {
+            "src": "public/index.php",
+            "use": "@vercel/php",
+            "config": {
+                "composer": "composer install --optimize-autoloader --no-dev"
+            }
+        }
+    ],
     "public": true,
     "buildCommand": "vite build",
     "outputDirectory": "public/build",
