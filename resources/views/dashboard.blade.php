@@ -1,15 +1,15 @@
 <x-app-layout>
     <x-slot name="header">
-        <div class="flex flex-row justify-between items-center">
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="fw-bold fs-5 text-dark">
                 {{ Auth::user()->hasRole('owner') ? __('Owner Dashboard') : __('Dashboard') }}
             </h2>
         </div>
     </x-slot>
     
     <div class="py-12">
-        <div class="max-w-5xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-10 flex flex-col gap-y-5">
+        <div class="container mx-auto px-3 px-lg-5">
+            <div class="bg-white overflow-hidden shadow-sm rounded-lg p-4 d-flex flex-column gap-3">
                 @role('owner')
                 <div class="item-card flex flex-col gap-y-10 md:flex-row justify-between items-center">
                     <div class="flex flex-col gap-y-3">
